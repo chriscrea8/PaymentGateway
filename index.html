@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Switch Payment Gateway</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="modalBtn" class="button">Click Here</button>
+
+    <div id="simpleModal" class="modal">
+        <span class="closeBtn">&times;</span>
+        <div class="modal-content">
+            
+            
+                <div class="modal-header">
+                    
+                    <div class="modal-header-sub">
+                        <div class="brand-icon">
+                            <img src="images/logo.png" alt="logo" class="logo">
+                        </div>
+                        <div class="payment-details">
+                            <p>youremail@mail.com <br>
+                           <span class="price"> NGN 325,000,000 </span> </p>
+                        </div>
+                    </div>
+                    <h4>SELECT PAYMENT METHOD</h4>
+                </div>
+           
+            <div>
+            <!--Modal Navigation-->
+            <div class="accordion">
+                <button class="accordion__button">
+                    <i class="fas fa-credit-card"></i>
+                    <div class="accordion__header">
+                        Pay with Debit/Credit Card <br> <span>
+                        Payment with your ATM Debit Card</span>
+                    </div>
+                </button>
+                <div class="accordion__content">
+                    <div class="form">
+                        <form action="" method="POST" id="card-form">
+                            <label for="email" class="control-label">Email</label> <br>
+                            <input name="email" type="email" class="form-control" placeholder="yourmail@mail.com" required> <br>
+
+                            <label for="name" class="control-label">Name on Card</label> <br>
+                            <input name="name" type="text" class="form-control" placeholder="John Doe" required> <br>
+
+                            <label for="email" class="control-label">Card Number</label> <br>
+                            <input name="card-number" type="number" class="form-control" placeholder="1234 1234 1234 1234" required> <br>
+
+
+                            <div class="detail-float">
+                                <div class="date-field">
+                                    <label for="date" class="control-label">Valid Through</label> <br>
+                                    <input name="date" type="text" class="form-control date-field" placeholder="MM/YY" required> <br>
+                                </div>
+
+                                <div class="cvc-field">
+                                    <label for="cvc" class="control-label">CVC</label> <br>
+                                    <input name="cvc" type="password" class="form-control cvc-field" placeholder="123" required> <br>
+                                </div>
+                            </div>
+
+                            <input type="submit" class="form-control submit" value="SECURE PAY N25,000">
+                        </form>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="accordion ">
+                <button class="accordion__button">
+                    <i class="fas fa-university"></i>
+                    <div class="accordion__header">
+                        Pay with Bank Deposit <br> <span>
+                        Payment via Bank Teller Deposit</span>
+                    </div>
+                </button>
+                <div class="accordion__content">
+                    <div class="form">
+                        <form action="" method="POST" id="card-form">
+                            <label for="bank-type" class="control-label">Select Your Bank</label> <br>
+                            <select name="bank-type" id="bank" class="form-control">
+                                <option value="bank">Click here to choose</option>
+                                <option value="access">Access Bank</option>
+                                <option value="uba">UBA</option>
+                                <option value="zenith">Zenith Bank</option>
+                            </select> <br>
+
+                            <div class="detail-float">
+                                <div class="account-field">
+                                    <label for="account-number" class="control-label">Enter Account Number</label> <br>
+                                    <input name="account-number" type="number" class="form-control account-number" placeholder="10 Digits Account Number" required> <br>
+                                </div>
+                                
+                                <div class="btn-verify">
+                                    <input type="button" class="form-control submit" value="Verify"> <br>
+                                </div> 
+                            </div>
+
+                            <div class="detail-float">
+                                <div class="token-field">
+                                    <label for="token" class="control-label">Enter Token Sent to Phone</label> <br>
+                                    <input name="token" type="number" class="form-control" placeholder="123456" required> <br>
+                                </div>
+
+                                <div class="token-resend">
+                                    <input type="button" class="form-control submit" value="Resend Token (30s)"> <br>
+                                </div>
+                            </div>
+
+                            
+                            <input type="submit" class="form-control submit" value="Authenticate">
+                        </form>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion ">
+                <button class="accordion__button">
+                    <i class="fas fa-random"></i>
+                    <div class="accordion__header">
+                        Bank Transfer <br> <span>
+                        Transfer to a Merchant Bank Account</span>
+                    </div>
+                </button>
+                <div class="accordion__content">
+                    <div class="no-form-tab">
+                        <div class="no-form-tab-content">
+                            <p>Transfer <span>N25,000</span> to the Account <br> provided below</p>
+                            <p>Access Bank <br> <span> 0023456789 </span></p>                                
+                        </div>
+                        <div class="no-form-tab-content">
+                            <p>This account is only available for this transaction, <br> and will expire in <span> 30 minutes</span>.</p>
+                        </div>
+                    </div>
+                    <form action="" class="no-form">
+                        <input type="button" class="form-control submit" value="Verify Money Sent">
+                    </form>
+                </div>
+            </div>
+
+            <div class="accordion ">
+                <button class="accordion__button">
+                    <i class="far fa-building"></i>
+                    <div class="accordion__header">
+                        Pay via USSD Code <br> <span>
+                        Auto-generated USSD Code for direct payment</span>
+                    </div>
+                </button>
+                <div class="accordion__content">
+                    <div class="no-form-tab">
+                        <div class="no-form-tab-content">
+                            <p>Select your Bank for Payment</p>
+
+                            <div class="bank-details">
+                                <a href="#" class="bank-name">Access Bank</a>
+                                <p class="bank-code">*901#</p>
+                            </div>
+
+                            <div class="bank-details">
+                                <a href="#" class="bank-name">United Bank for Africa</a>
+                                <p class="bank-code">*919#</p>
+                            </div>
+
+                            <div class="bank-details">
+                                <a href="#" class="bank-name">Sterling Bank</a>
+                                <p class="bank-code">*822#</p>
+                            </div>
+
+                            <div class="bank-details">
+                                <a href="#" class="bank-name">Zenith Bank</a>
+                                <p class="bank-code">*966#</p>
+                            </div>
+
+                            <div class="bank-details">
+                                <a href="#" class="bank-name">First Bank of Nigeria</a>
+                                <p class="bank-code">*894#</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="no-form-tab-content accordion-noactive">
+                            <p>Dial the code below to complete your transaction</p>
+                            <p>Access Bank <br> <span> *901*11*4*456789# </span> <i class="far fa-copy"></i></p> 
+                            <p>Copy Code or Tap to call</p>
+
+                            <a href="#"><p>Confirm I've made payment</p></a>
+
+                            <a href="#" class="cancel">Cancel Transaction</a>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="accordion ">
+                <button class="accordion__button">
+                    <i class="fas fa-qrcode"></i>
+                    <div class="accordion__header">
+                        Pay with QR Code <br> <span>
+                        Scan QR Code with your Payment Application</span>
+                    </div>
+                </button>
+                <div class="accordion__content">
+                    <div class="no-form-tab">
+                        <div class="no-form-tab-content">
+                            <p>Scan the QR code below in your <br> Banking App to Initiate Payment</p>
+
+                            <img src="icons/qr-code.svg" alt="QR code" class="qr-code"> <br>
+
+                            <a href="#" class="qr-download">Download image</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+
+            
+
+  
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+
+<script>
+
+</script>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
