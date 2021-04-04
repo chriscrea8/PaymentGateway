@@ -1,11 +1,11 @@
 // Get modal elements
-var modal = document.getElementById('simpleModal');
+var modal = document.getElementById('easyswitch-simpleModal');
 
 //Get open modal button
-var modalBtn = document.getElementById('modalBtn');
+var modalBtn = document.getElementById('easyswitch-modalBtn');
 
 //Get close button
-var closeBtn = document.getElementsByClassName('closeBtn')[0];
+var closeBtn = document.getElementsByClassName('easyswitch-closeBtn')[0];
 
 //Listen for open click
 modalBtn.addEventListener('click', openModal);
@@ -35,9 +35,9 @@ function clickOutside(e){
 }
 
 
-document.querySelectorAll('.accordion__button').forEach(button => {
+document.querySelectorAll('.easyswitch-accordion__button').forEach(button => {
     button.addEventListener('click', () => {
-        button.classList.toggle('accordion__button--active');
+        button.classList.toggle('easyswitch-accordion__button--active');
     });
 });
 
@@ -46,17 +46,17 @@ $(document).ready(function() {
     $buttons = $("div > button");
 
     $buttons.click(function() {
-        $buttons.not(this).parent().toggleClass("accordion-noactive");
+        $buttons.not(this).parent().toggleClass("easyswitch-accordion-noactive");
         
     });
 
-    $bankdetails = $(".bank-details");
+    $bankdetails = $(".easyswitch-bank-details");
     $bankdetails.click(function() {
-        $(".no-form-tab-content").toggleClass("accordion-noactive");
+        $(".easyswitch-no-form-tab-content").toggleClass("easyswitch-accordion-noactive");
     });
     
-    $(".cancel").click(function() {
-        $(".no-form-tab-content").toggleClass("accordion-noactive");
+    $(".easyswitch-cancel").click(function() {
+        $(".easyswitch-no-form-tab-content").toggleClass("easyswitch-accordion-noactive");
     });
     
 });
