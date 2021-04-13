@@ -429,6 +429,35 @@ form:nth-of-type(2) .easyswitch-no-form{
     background-color: #E5E5E5;
 }
 
+.easyswitch-powered-by {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(168, 168, 168);
+    margin-top: -60px;
+}
+
+.easyswitch-powered-by p {
+    margin-top: -2px;
+}
+
+.easyswitch-powered-by-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+
+}
+
+.easyswitch-powered-by-icons img{
+    width: 30px;
+}
+
+.easyswitch-powered-by-icons img:first-of-type{
+    width: 20px;
+}
+
 /* Media Queries */
 @media all and (max-width: 1024px) {
     .easyswitch-modal-content {       

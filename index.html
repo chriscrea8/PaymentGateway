@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,241 +8,269 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <button id="easyswitch-modalBtn" class="easyswitch-button">Click Here</button>
 
     <div id="easyswitch-simpleModal" class="easyswitch-modal">
         <span class="easyswitch-closeBtn">&times;</span>
-        <div class="easyswitch-modal-content">            
-            
-                <div class="easyswitch-modal-header">
-                    
-                    <div class="easyswitch-modal-header-sub">
-                        <div class="easyswitch-brand-icon">
-                            <img src="images/logo.png" alt="logo" class="easyswitch-logo">
-                        </div>
-                        <div class="easyswitch-payment-details">
-                            <p>youremail@mail.com <br>
-                           <span class="easyswitch-price"> NGN 325,000,000 </span> </p>
-                        </div>
+        <div class="easyswitch-modal-content">
+
+            <div class="easyswitch-modal-header">
+
+                <div class="easyswitch-modal-header-sub">
+                    <div class="easyswitch-brand-icon">
+                        <img src="images/logo.png" alt="logo" class="easyswitch-logo">
                     </div>
-                    <h4>SELECT PAYMENT METHOD</h4>
+                    <div class="easyswitch-payment-details">
+                        <p>youremail@mail.com <br>
+                            <span class="easyswitch-price"> NGN 325,000,000 </span> </p>
+                    </div>
                 </div>
-           
+                <h4>SELECT PAYMENT METHOD</h4>
+            </div>
+
             <div>
-            <!--Modal Navigation-->
-            <div class="easyswitch-accordion">
-                <button class="easyswitch-accordion__button">
-                    <i class="fas fa-credit-card"></i>
-                    <div class="easyswitch-accordion__header">
-                        Pay with Debit/Credit Card <br> <span>
-                        Payment with your ATM Debit Card</span>
-                    </div>
-                </button>
-                <div class="easyswitch-accordion__content">
-                    <div class="easyswitch-form">
-                        <form action="" method="POST" id="easyswitch-card-form">
-                            <!-- <label for="email" class="control-label">Email</label> <br>
+                <!--Modal Navigation-->
+                <div class="easyswitch-accordion">
+                    <button class="easyswitch-accordion__button">
+                        <i class="fas fa-credit-card"></i>
+                        <div class="easyswitch-accordion__header">
+                            Pay with Debit/Credit Card <br> <span>
+                                Payment with your ATM Debit Card</span>
+                        </div>
+                    </button>
+                    <div class="easyswitch-accordion__content">
+                        <div class="easyswitch-form">
+                            <form action="" method="POST" id="easyswitch-card-form">
+                                <!-- <label for="email" class="control-label">Email</label> <br>
                             <input name="email" type="email" class="form-control" placeholder="yourmail@mail.com" required> <br>
 
                             <label for="name" class="control-label">Name on Card</label> <br>
                             <input name="name" type="text" class="form-control" placeholder="John Doe" required> <br> -->
 
-                            <label for="card-number" class="easyswitch-control-label">Card Number</label> <br>
-                            <input name="card-number" type="text" class="easyswitch-form-control" placeholder="**** **** **** ****" data-mask="0000 0000 0000 0000" required> <br>
+                                <label for="card-number" class="easyswitch-control-label">Card Number</label> <br>
+                                <input name="card-number" type="text" class="easyswitch-form-control"
+                                    placeholder="**** **** **** ****" data-mask="0000 0000 0000 0000" required> <br>
 
 
-                            <div class="easyswitch-detail-float">
-                                <div class="easyswitch-date-field">
-                                    <label for="date" class="easyswitch-control-label">Valid Through</label> <br>
-                                    <input name="date" type="text" class="easyswitch-form-control easyswitch-date-field" placeholder="MM / YY" data-mask="00 / 00" required> <br>
+                                <div class="easyswitch-detail-float">
+                                    <div class="easyswitch-date-field">
+                                        <label for="date" class="easyswitch-control-label">Valid Through</label> <br>
+                                        <input name="date" type="text"
+                                            class="easyswitch-form-control easyswitch-date-field" placeholder="MM / YY"
+                                            data-mask="00 / 00" required> <br>
+                                    </div>
+
+                                    <div class="easyswitch-cvc-field">
+                                        <label for="cvc" class="easyswitch-control-label">CVC</label> <br>
+                                        <input name="cvc" type="password"
+                                            class="easyswitch-form-control easyswitch-cvc-field" placeholder="000"
+                                            data-mask="000" required> <br>
+                                    </div>
                                 </div>
 
-                                <div class="easyswitch-cvc-field">
-                                    <label for="cvc" class="easyswitch-control-label">CVC</label> <br>
-                                    <input name="cvc" type="password" class="easyswitch-form-control easyswitch-cvc-field" placeholder="000" data-mask="000" required> <br>
+                                <label for="card-pin" class="easyswitch-control-label">Card PIN</label> <br>
+                                <input name="card-pin" type="password"
+                                    class="easyswitch-form-control easyswitch-card-pin" placeholder="0000"
+                                    data-mask="0000" required> <br>
+
+                                <input type="submit" class="easyswitch-form-control easyswitch-submit"
+                                    value="SECURE PAY NGN 25,000">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="easyswitch-accordion ">
+                    <button class="easyswitch-accordion__button">
+                        <i class="fas fa-university"></i>
+                        <div class="easyswitch-accordion__header">
+                            Pay with Bank Deposit <br> <span>
+                                Payment via Bank Teller Deposit</span>
+                        </div>
+                    </button>
+                    <div class="easyswitch-accordion__content">
+                        <div class="easyswitch-form">
+                            <form action="" method="POST" id="easyswitch-card-form">
+                                <label for="bank-type" class="easyswitch-control-label">Select Your Bank</label> <br>
+                                <select name="bank-type" id="easyswitch-bank" class="easyswitch-form-control">
+                                    <option value="bank">Click here to choose</option>
+                                    <option value="access">Access Bank</option>
+                                    <option value="uba">UBA</option>
+                                    <option value="zenith">Zenith Bank</option>
+                                </select> <br>
+
+                                <div class="easyswitch-detail-float">
+                                    <div class="easyswitch-account-field">
+                                        <label for="account-number" class="easyswitch-control-label">Enter Account
+                                            Number</label> <br>
+                                        <input name="account-number" type="number"
+                                            class="easyswitch-form-control easyswitch-account-number"
+                                            placeholder="10 Digits Account Number" data-mask="0000000000" required> <br>
+                                    </div>
+
+                                    <div class="easyswitch-btn-verify">
+                                        <input type="button" class="easyswitch-form-control easyswitch-submit"
+                                            value="Verify"> <br>
+                                    </div>
                                 </div>
+
+                                <div class="easyswitch-detail-float">
+                                    <div class="easyswitch-token-field">
+                                        <label for="token" class="easyswitch-control-label">Enter Token Sent to
+                                            Phone</label> <br>
+                                        <input name="token" type="number" class="easyswitch-form-control"
+                                            placeholder="123456" required> <br>
+                                    </div>
+
+                                    <div class="easyswitch-token-resend">
+                                        <input type="button" class="easyswitch-form-control easyswitch-submit"
+                                            value="Resend Token (30s)"> <br>
+                                    </div>
+                                </div>
+
+
+                                <input type="submit" class="easyswitch-form-control easyswitch-submit"
+                                    value="Authenticate">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="easyswitch-accordion ">
+                    <button class="easyswitch-accordion__button">
+                        <i class="fas fa-random"></i>
+                        <div class="easyswitch-accordion__header">
+                            Bank Transfer <br> <span>
+                                Transfer to a Merchant Bank Account</span>
+                        </div>
+                    </button>
+                    <div class="easyswitch-accordion__content">
+                        <div class="easyswitch-no-form-tab">
+                            <div class="easyswitch-no-form-tab-content">
+                                <p>Transfer <span>N25,000</span> to the Account <br> provided below</p>
+                                <p>Access Bank <br> <span> 0023456789 </span></p>
                             </div>
-
-                            <label for="card-pin" class="easyswitch-control-label">Card PIN</label> <br>
-                            <input name="card-pin" type="password" class="easyswitch-form-control easyswitch-card-pin" placeholder="0000" data-mask="0000" required> <br>
-
-                            <input type="submit" class="easyswitch-form-control easyswitch-submit" value="SECURE PAY NGN 25,000">
+                            <div class="easyswitch-no-form-tab-content">
+                                <p>This account is only available for this transaction, <br> and will expire in <span>
+                                        30 minutes</span>.</p>
+                            </div>
+                        </div>
+                        <form action="" class="easyswitch-no-form">
+                            <input type="button" class="easyswitch-form-control easyswitch-submit"
+                                value="Verify Money Sent">
                         </form>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="easyswitch-accordion ">
-                <button class="easyswitch-accordion__button">
-                    <i class="fas fa-university"></i>
-                    <div class="easyswitch-accordion__header">
-                        Pay with Bank Deposit <br> <span>
-                        Payment via Bank Teller Deposit</span>
                     </div>
-                </button>
-                <div class="easyswitch-accordion__content">
-                    <div class="easyswitch-form">
-                        <form action="" method="POST" id="easyswitch-card-form">
-                            <label for="bank-type" class="easyswitch-control-label">Select Your Bank</label> <br>
-                            <select name="bank-type" id="easyswitch-bank" class="easyswitch-form-control">
-                                <option value="bank">Click here to choose</option>
-                                <option value="access">Access Bank</option>
-                                <option value="uba">UBA</option>
-                                <option value="zenith">Zenith Bank</option>
-                            </select> <br>
+                </div>
 
-                            <div class="easyswitch-detail-float">
-                                <div class="easyswitch-account-field">
-                                    <label for="account-number" class="easyswitch-control-label">Enter Account Number</label> <br>
-                                    <input name="account-number" type="number" class="easyswitch-form-control easyswitch-account-number" placeholder="10 Digits Account Number" data-mask="0000000000" required> <br>
-                                </div>
-                                
-                                <div class="easyswitch-btn-verify">
-                                    <input type="button" class="easyswitch-form-control easyswitch-submit" value="Verify"> <br>
-                                </div> 
-                            </div>
+                <div class="easyswitch-accordion ">
+                    <button class="easyswitch-accordion__button">
+                        <i class="far fa-building"></i>
+                        <div class="easyswitch-accordion__header">
+                            Pay via USSD Code <br> <span>
+                                Auto-generated USSD Code for direct payment</span>
+                        </div>
+                    </button>
+                    <div class="easyswitch-accordion__content">
+                        <div class="easyswitch-no-form-tab">
+                            <div class="easyswitch-no-form-tab-content">
+                                <p>Select your Bank for Payment</p>
 
-                            <div class="easyswitch-detail-float">
-                                <div class="easyswitch-token-field">
-                                    <label for="token" class="easyswitch-control-label">Enter Token Sent to Phone</label> <br>
-                                    <input name="token" type="number" class="easyswitch-form-control" placeholder="123456" required> <br>
+                                <div class="easyswitch-bank-details">
+                                    <a href="#" class="easyswitch-bank-name">Access Bank</a>
+                                    <p class="easyswitch-bank-code">*901#</p>
                                 </div>
 
-                                <div class="easyswitch-token-resend">
-                                    <input type="button" class="easyswitch-form-control easyswitch-submit" value="Resend Token (30s)"> <br>
+                                <div class="easyswitch-bank-details">
+                                    <a href="#" class="easyswitch-bank-name">United Bank for Africa</a>
+                                    <p class="easyswitch-bank-code">*919#</p>
                                 </div>
+
+                                <div class="easyswitch-bank-details">
+                                    <a href="#" class="easyswitch-bank-name">Sterling Bank</a>
+                                    <p class="easyswitch-bank-code">*822#</p>
+                                </div>
+
+                                <div class="easyswitch-bank-details">
+                                    <a href="#" class="easyswitch-bank-name">Zenith Bank</a>
+                                    <p class="easyswitch-bank-code">*966#</p>
+                                </div>
+
+                                <div class="easyswitch-bank-details">
+                                    <a href="#" class="easyswitch-bank-name">First Bank of Nigeria</a>
+                                    <p class="easyswitch-bank-code">*894#</p>
+                                </div>
+
                             </div>
 
-                            
-                            <input type="submit" class="easyswitch-form-control easyswitch-submit" value="Authenticate">
-                        </form>
-                </div>
-                </div>
-            </div>
+                            <div class="easyswitch-no-form-tab-content easyswitch-accordion-noactive">
+                                <p>Dial the code below to complete your transaction</p>
+                                <p>Access Bank <br> <span> *901*11*4*456789# </span> <i class="far fa-copy"></i></p>
+                                <p>Copy Code or Tap to call</p>
 
-            <div class="easyswitch-accordion ">
-                <button class="easyswitch-accordion__button">
-                    <i class="fas fa-random"></i>
-                    <div class="easyswitch-accordion__header">
-                        Bank Transfer <br> <span>
-                        Transfer to a Merchant Bank Account</span>
-                    </div>
-                </button>
-                <div class="easyswitch-accordion__content">
-                    <div class="easyswitch-no-form-tab">
-                        <div class="easyswitch-no-form-tab-content">
-                            <p>Transfer <span>N25,000</span> to the Account <br> provided below</p>
-                            <p>Access Bank <br> <span> 0023456789 </span></p>                                
-                        </div>
-                        <div class="easyswitch-no-form-tab-content">
-                            <p>This account is only available for this transaction, <br> and will expire in <span> 30 minutes</span>.</p>
-                        </div>
-                    </div>
-                    <form action="" class="easyswitch-no-form">
-                        <input type="button" class="easyswitch-form-control easyswitch-submit" value="Verify Money Sent">
-                    </form>
-                </div>
-            </div>
+                                <a href="#">
+                                    <p>Confirm I've made payment</p>
+                                </a>
 
-            <div class="easyswitch-accordion ">
-                <button class="easyswitch-accordion__button">
-                    <i class="far fa-building"></i>
-                    <div class="easyswitch-accordion__header">
-                        Pay via USSD Code <br> <span>
-                        Auto-generated USSD Code for direct payment</span>
-                    </div>
-                </button>
-                <div class="easyswitch-accordion__content">
-                    <div class="easyswitch-no-form-tab">
-                        <div class="easyswitch-no-form-tab-content">
-                            <p>Select your Bank for Payment</p>
+                                <a href="#" class="easyswitch-cancel">Cancel Transaction</a>
 
-                            <div class="easyswitch-bank-details">
-                                <a href="#" class="easyswitch-bank-name">Access Bank</a>
-                                <p class="easyswitch-bank-code">*901#</p>
                             </div>
-
-                            <div class="easyswitch-bank-details">
-                                <a href="#" class="easyswitch-bank-name">United Bank for Africa</a>
-                                <p class="easyswitch-bank-code">*919#</p>
-                            </div>
-
-                            <div class="easyswitch-bank-details">
-                                <a href="#" class="easyswitch-bank-name">Sterling Bank</a>
-                                <p class="easyswitch-bank-code">*822#</p>
-                            </div>
-
-                            <div class="easyswitch-bank-details">
-                                <a href="#" class="easyswitch-bank-name">Zenith Bank</a>
-                                <p class="easyswitch-bank-code">*966#</p>
-                            </div>
-
-                            <div class="easyswitch-bank-details">
-                                <a href="#" class="easyswitch-bank-name">First Bank of Nigeria</a>
-                                <p class="easyswitch-bank-code">*894#</p>
-                            </div>
-                            
                         </div>
 
-                        <div class="easyswitch-no-form-tab-content easyswitch-accordion-noactive">
-                            <p>Dial the code below to complete your transaction</p>
-                            <p>Access Bank <br> <span> *901*11*4*456789# </span> <i class="far fa-copy"></i></p> 
-                            <p>Copy Code or Tap to call</p>
-
-                            <a href="#"><p>Confirm I've made payment</p></a>
-
-                            <a href="#" class="easyswitch-cancel">Cancel Transaction</a>
-                            
-                        </div>
                     </div>
-                   
                 </div>
-            </div>
 
-            <div class="easyswitch-accordion ">
-                <button class="easyswitch-accordion__button">
-                    <i class="fas fa-qrcode"></i>
-                    <div class="easyswitch-accordion__header">
-                        Pay with QR Code <br> <span>
-                        Scan QR Code with your Payment Application</span>
-                    </div>
-                </button>
-                <div class="easyswitch-accordion__content">
-                    <div class="easyswitch-no-form-tab">
-                        <div class="easyswitch-no-form-tab-content">
-                            <p>Scan the QR code below in your <br> Banking App to Initiate Payment</p>
+                <div class="easyswitch-accordion ">
+                    <button class="easyswitch-accordion__button">
+                        <i class="fas fa-qrcode"></i>
+                        <div class="easyswitch-accordion__header">
+                            Pay with QR Code <br> <span>
+                                Scan QR Code with your Payment Application</span>
+                        </div>
+                    </button>
+                    <div class="easyswitch-accordion__content">
+                        <div class="easyswitch-no-form-tab">
+                            <div class="easyswitch-no-form-tab-content">
+                                <p>Scan the QR code below in your <br> Banking App to Initiate Payment</p>
 
-                            <img src="icons/qr-code.svg" alt="QR code" class="easyswitch-qr-code"> <br>
+                                <img src="icons/qr-code.svg" alt="QR code" class="easyswitch-qr-code"> <br>
 
-                            <a href="#" class="easyswitch-qr-download">Download image</a>
-                            
+                                <a href="#" class="easyswitch-qr-download">Download image</a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
 
-
+        <div class="easyswitch-powered-by">
+            <div class="easyswitch-powered-by-icons">
+                <img src="./images/logo.png" alt="logo">
+                <img src="./images/mc.png" alt="mastercard">
+                <img src="./images/visa.png" alt="visa">
+            </div>
+            <p>powered by easyswitch</p>
         </div>
     </div>
 
-            
 
-  
 
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
     </script>
 
-    <script 
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js">
     </script>
 
     <script src="main.js"></script>
 
 </body>
+
 </html>
