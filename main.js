@@ -14,7 +14,7 @@ modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
 
 //Listen for outside click
-window.addEventListener('click', clickOutside);
+// window.addEventListener('click', clickOutside);
 
 
 //function to open modal
@@ -24,15 +24,19 @@ function openModal(){
 
 //function to close modal
 function closeModal(){
-    modal.style.display = 'none';
+    let result = confirm('Please confirm you want to cancel the transaction');
+
+    if (result == true) {
+        modal.style.display = 'none';
+    }  
 }
 
 //function to close modal if outside click
-function clickOutside(e){
-    if(e.target == modal) {
-        //modal.style.display = 'none';
-    }    
-}
+// function clickOutside(e){
+//     if(e.target == modal) {
+//         modal.style.display = 'none';
+//     }    
+// }
 
 
 document.querySelectorAll('.easyswitch-accordion__button').forEach(button => {
