@@ -13,8 +13,47 @@
 
     <button id="easyswitch-modalBtn" class="easyswitch-button">Click Here</button>
 
-    <div id="easyswitch-simpleModal" class="easyswitch-modal">
+    <div class="easyswitch-loader">
+        <div class="windows8">
+            <div class="wBall" id="wBall_1">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_2">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_3">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_4">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_5">
+                <div class="wInnerBall"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="easyswitch-simpleModal" class="easyswitch-modal result">
         <span class="easyswitch-closeBtn">&times;</span>
+        
+        <div class="easyswitch-modal-success">
+            <div class="icon">
+                <i class="fa fa-check"></i>
+            </div>
+
+            <div class="easyswitch-modal-success-title">
+                <h2>Payment Successful</h2>
+            </div>
+
+            <div class="easyswitch-modal-success-description">
+                <p>Order Amount : <span><s>N</s>350,000</span></p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In eaque voluptate, velit doloribus tempore</p>
+            </div>
+
+            <button id="easyswitch-modal-dismiss-button" class="easyswitch-button">Dismiss</button>
+            
+        </div>
+
         <div class="easyswitch-modal-content">
 
             <div class="easyswitch-modal-header">
@@ -52,7 +91,7 @@
 
                                 <label for="card-number" class="easyswitch-control-label">Card Number</label> <br>
                                 <input name="card-number" type="text" class="easyswitch-form-control"
-                                    placeholder="**** **** **** ****" data-mask="0000 0000 0000 0000" required> <br>
+                                    placeholder="0000 0000 0000 0000" data-mask="0000 0000 0000 0000" required> <br>
 
 
                                 <div class="easyswitch-detail-float">
