@@ -11,8 +11,9 @@ body {
     padding: 1em 2em;
     color: #000000;
     border: 0;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .easyswitch-button:hover {
