@@ -1,9 +1,13 @@
 body {
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     line-height: 1.6;
     box-sizing: border-box;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .easyswitch-button {
